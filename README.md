@@ -48,3 +48,5 @@ The same command can be run non-interactively as well:
 ```shell
 bench new-site development.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
 ```
+
+Fore more info go through the [Frappe Tutorial](https://frappeframework.com/docs/user/en/tutorial)
