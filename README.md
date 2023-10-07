@@ -27,6 +27,15 @@ bench set-config -g redis_queue redis://redis-queue:6379
 bench set-config -g redis_socketio redis://redis-socketio:6379
 ```
 
+### Enable developer mode
+
+Before we can make any changes like create DocType, etc, we need to enable developer mode
+
+```shell
+bench set-config -g developer_mode true
+bench start
+```
+
 ### Create a new site with bench
 
 You can create a new site with the following command:
@@ -49,4 +58,4 @@ The same command can be run non-interactively as well:
 bench new-site development.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
 ```
 
-Fore more info go through the [Frappe Tutorial](https://frappeframework.com/docs/user/en/tutorial)
+For more info go through the [Frappe Tutorial](https://frappeframework.com/docs/user/en/tutorial)
