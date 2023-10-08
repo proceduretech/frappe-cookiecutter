@@ -5,6 +5,7 @@
 sites
 
 development/*
+!development/scripts
 !development/.vscode
 !development/README.md
 !development/installer.py
