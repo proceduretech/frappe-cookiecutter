@@ -13,14 +13,19 @@ services:
     volumes:
       - mariadb-data:/var/lib/mysql
 
-  redis-cache:
+  redis:
     image: redis:alpine
 
-  redis-queue:
-    image: redis:alpine
+# For production environment, keep different
+# for cache, queue and socketio
+  # redis-cache:
+    # image: redis:alpine
 
-  redis-socketio:
-    image: redis:alpine
+  # redis-queue:
+    # image: redis:alpine
+
+  # redis-socketio:
+    # image: redis:alpine
 
   frappe:
     image: frappe/bench:latest
