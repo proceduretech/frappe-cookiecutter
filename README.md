@@ -18,13 +18,13 @@ cd frappe-bench
 
 ### Set the configs
 
-We need to tell bench to use the right containers instead of localhost. Run the following commands inside the container:
+We need to tell bench to use the right containers instead of localhost. Run the following commands inside the container (Using the same redis instance for cache, queue and socketio in development mode):
 
 ```shell
 bench set-config -g db_host mariadb
-bench set-config -g redis_cache redis://redis-cache:6379
-bench set-config -g redis_queue redis://redis-queue:6379
-bench set-config -g redis_socketio redis://redis-socketio:6379
+bench set-config -g redis_cache redis://redis:6379 
+bench set-config -g redis_queue redis://redis:6379
+bench set-config -g redis_socketio redis://redis:6379
 ```
 
 ### Enable developer mode
