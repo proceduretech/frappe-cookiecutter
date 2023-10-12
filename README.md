@@ -22,7 +22,7 @@ We need to tell bench to use the right containers instead of localhost. Run the 
 
 ```shell
 bench set-config -g db_host mariadb
-bench set-config -g redis_cache redis://redis:6379 
+bench set-config -g redis_cache redis://redis:6379
 bench set-config -g redis_queue redis://redis:6379
 bench set-config -g redis_socketio redis://redis:6379
 ```
